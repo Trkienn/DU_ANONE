@@ -13,7 +13,7 @@ require_file(PATH_MODEL);
 // điều hướng   
 $act = $_GET['act'] ?? '/';
 match ($act) {
-    '/' => index(),
+    '/' => homeindex(),
     'user-detail' => userDetail($_GET['id']),
 };
 
