@@ -16,7 +16,7 @@ require_file(PATH_MODEL);
 $act = $_GET['act'] ?? '/';
 match ($act) {
     '/' => homeindex(),
-    // 'user-detail' => userDetail($_GET['id']),
+    'user-detail' => userListAll(),
 };
 
 require_once './commons/disconnect-db.php';

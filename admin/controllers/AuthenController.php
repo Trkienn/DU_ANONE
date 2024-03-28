@@ -29,6 +29,6 @@ function authenLogout() {
         session_destroy();
     }
 
-    header('Location: ' . BASE_URL);
+    header('Location: ' . BASE_URL_ADMIN . '?act=login');
     exit();
 }
