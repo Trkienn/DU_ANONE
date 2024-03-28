@@ -54,6 +54,15 @@
                         </div>
                 
                         <div class="mb-3 mt-3">
+                            <label for="author_id" class="form-label">Author:</label>
+                            <select class="form-control" id="author_id" name="author_id">
+                                <?php foreach ($authors as $author) : ?>
+                                    <option value="<?= $author['id'] ?>"><?= $author['name'] ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
+
+                        <div class="mb-3 mt-3">
                             <label for="tags" class="form-label">Tags:</label>
                             <select class="form-control" id="tags" name="tags[]" multiple>
                                 <?php foreach ($tags as $tag) : ?>

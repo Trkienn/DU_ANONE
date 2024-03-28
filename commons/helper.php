@@ -68,3 +68,10 @@ if (!function_exists('middleware_auth_check')) {
         }
     }
 }
+
+// if(!function_exists('settings')){
+//     function settings(){
+//         $settings = listAll('setting');
+//         $keys = array_column($settings);
+//     }
+// }

@@ -22,6 +22,16 @@
                         <td>
                             <input type="text" class="form-control" name="logo" value="<?= $settings['logo'] ?? null ?>">
                         </td>
+
+                        <td>facebook</td>
+                        <td>
+                            <input type="text" class="form-control" name="logo" value="<?= $settings['logo'] ?? null ?>">
+                        </td>
+
+                        <td>Tiwter</td>
+                        <td>
+                            <input type="text" class="form-control" name="logo" value="<?= $settings['logo'] ?? null ?>">
+                        </td>
                     </tr>
 
                 </table>
