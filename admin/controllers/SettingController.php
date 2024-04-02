@@ -1,19 +1,21 @@
-<?php 
+<?php
 
-function settingShowForm() {
-    
-    $title      = 'Danh sách setting';
-    $view       = 'settings/form';
+function settingShowForm()
+{
+
+    $title = 'Danh sách setting';
+    $view = 'settings/form';
 
     $settings = settingPluckKeyValue();
 
     require_once PATH_VIEW_ADMIN . 'layouts/master.php';
 }
 
-function settingSave() {
+function settingSave()
+{
     $settings = settingPluckKeyValue();
 
-    foreach($_POST as $key => $value) {
+    foreach ($_POST as $key => $value) {
         if (isset($settings[$key])) {
             // update
             if ($value != $settings[$key]) {
@@ -28,16 +30,22 @@ function settingSave() {
                 'value' => $value
             ]);
         }
-    };
+    }
+    ;
 
     $_SESSION['success'] = 'Thao tác thành công!';
+    $fileSettings = PATH_UPLOAD . '/uploads/settings.json';
+    if (file_exists($fileSettings)) {
+        unlink($fileSettings);
+    }
 
     header('Location: ' . BASE_URL_ADMIN . '?act=setting-form');
     exit();
 }
 
 
-function settingPluckKeyValue() {
+function settingPluckKeyValue()
+{
     $data = listAll('settings');
 
     $settings = [];

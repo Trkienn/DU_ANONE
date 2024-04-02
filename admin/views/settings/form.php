@@ -11,7 +11,7 @@
         </div>
         <div class="card-body">
             <form action="<?= BASE_URL_ADMIN . '?act=setting-save' ?>" method="POST">
-                <table class="table">
+                <table class="table" class="form-control">
                     <tr>
                         <th>Trường dữ liệu</th>
                         <th>Dữ liệu</th>
@@ -22,15 +22,23 @@
                         <td>
                             <input type="text" class="form-control" name="logo" value="<?= $settings['logo'] ?? null ?>">
                         </td>
+                        <td>Overview</td>
+                        <td>
+                            <input type="text" class="form-control" name="over" value="<?= $settings['over'] ?? null ?>">
+                        </td>
+                        <td>Tiwter</td>
+                        <td>
+                            <input type="text" class="form-control" name="titer" value="<?= $settings['titer'] ?? null ?>">
+                        </td>
 
                         <td>facebook</td>
                         <td>
-                            <input type="text" class="form-control" name="logo" value="<?= $settings['logo'] ?? null ?>">
+                            <input type="text" class="form-control" name="fb" value="<?= $settings['fb'] ?? null ?>">
                         </td>
 
-                        <td>Tiwter</td>
+                        <td>Instafram</td>
                         <td>
-                            <input type="text" class="form-control" name="logo" value="<?= $settings['logo'] ?? null ?>">
+                            <input type="text" class="form-control" name="inta" value="<?= $settings['inta'] ?? null ?>">
                         </td>
                     </tr>
 
