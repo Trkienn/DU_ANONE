@@ -5,7 +5,7 @@ require_once './commons/helper.php';
 require_once './commons/connect-db.php';
 require_once './commons/model.php';
 // lay du lieu global setting
-//  $settings = settings();
+ $settings = settings();
 //require tất cả các file trong controler và models
 //.....
 require_file(PATH_CONTROLLER);
