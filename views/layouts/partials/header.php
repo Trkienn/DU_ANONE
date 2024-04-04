@@ -9,9 +9,9 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="http://localhost/Du_ANONE/#">Blog</a></li>
-          <li><a href="single-post.html">Single Post</a></li>
-          <li class="dropdown"><a href="category.html"><span>Categories</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li><a href="http://localhost/Du_ANONE/#">Bài Viết</a></li>
+          <li><a href="single-post.html">Danh Sách Bài Viết</a></li>
+          <li class="dropdown"><a href="category.html"><span>Danh Mục Sản Phẩm</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="search-result.html">Search Result</a></li>
               <li><a href="#">Drop Down 1</a></li>
@@ -30,8 +30,8 @@
             </ul>
           </li>
 
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">Tin Tức</a></li>
+          <li><a href="contact.html">Liên Hệ</a></li>
         </ul>
       </nav><!-- .navbar -->
 
