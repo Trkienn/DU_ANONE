@@ -1,7 +1,7 @@
 <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="http://localhost/Du_ANONE/#" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="<?= BASE_URL ?>assets/client/assets/img/logo.png" alt=""> -->
         <h1><?= $GLOBALS['settings'] ['logo'] ?? null ?> </h1>
@@ -9,7 +9,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Blog</a></li>
+          <li><a href="http://localhost/Du_ANONE/#">Blog</a></li>
           <li><a href="single-post.html">Single Post</a></li>
           <li class="dropdown"><a href="category.html"><span>Categories</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
