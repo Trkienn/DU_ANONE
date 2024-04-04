@@ -1,14 +1,16 @@
-<?php 
+<?php
 
-function homeIndex() {
-     $view = 'home';
+function homeIndex()
+{
+    $view = 'home';
 
     $postTopView = postTopViewOnHome();
     // debug($postTopView);
-     $postTop6Latest = postTop6LatestOnHome($postTopView['p_id']);
-     $postTop6Latest = array_chunk($postTop6Latest, 3);   
-     $postTop5TrendingLatest = postTop5TrendingOnHome($postTopView['p_id']);
-  
+    $postTop6Latest = postTop6LatestOnHome($postTopView['p_id']);
+    $postTop6Latest = array_chunk($postTop6Latest, 3);
+    $postTop5TrendingLatest = postTop5TrendingOnHome($postTopView['p_id']);
+
+    $products = listAll('products');
     require_once PATH_VIEW . 'layouts/master.php';
 }
 // luồng MVC 1: vào index 

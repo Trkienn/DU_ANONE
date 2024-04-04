@@ -1,48 +1,51 @@
 <?php
-// require tất cả các file commons
+
+session_start();
+
+// Require file trong commons
 require_once './commons/env.php';
 require_once './commons/helper.php';
 require_once './commons/connect-db.php';
 require_once './commons/model.php';
-// lay du lieu global setting
-$settings = settings();
-//require tất cả các file trong controler và models
-//.....
+
+// Require file trong controllers và models
 require_file(PATH_CONTROLLER);
 require_file(PATH_MODEL);
 
-
-// điều hướng   
+// Điều hướng
 $act = $_GET['act'] ?? '/';
-//biến này cần khai báo
-$arrRouteNeedAth = [
 
+// Biến này cần khai báo được link cần đăng nhập mới vào được
+$arrRouteNeedAuth = [
     'cart-add',
     'cart-list',
     'cart-inc',
     'cart-dec',
-    'cart-del'
-
+    'cart-del',
+    'order-checkout',
+    'order-purchase',
+    'order-success',
 ];
+
+// Kiểm tra xem user đã đăng nhập chưa
+middleware_auth_check($act, $arrRouteNeedAuth);
+
 match ($act) {
-    '/' => homeindex(),
+    '/' => homeIndex(),
 
-
-    'cart-add' => cartAdd($_Get['productID']),
+    'cart-add'  => cartAdd($_GET['productID'], $_GET['quantity']),
     'cart-list' => cartList(),
-    'cart-inc' => cartInc($_Get['productID']),
-    'cart-dec' => cartDec($_Get['productID']),
-    'cart-del' => cartDel($_Get['productID']),
+    'cart-inc'  => cartInc($_GET['productID']),
+    'cart-dec'  => cartDec($_GET['productID']),
+    'cart-del'  => cartDel($_GET['productID']),
 
+    'order-checkout'  => orderCheckout(),
+    'order-purchase'  => orderPurchase(),
+    'order-success'  => orderSuccess(),
 
-
-
-
-
+    // Authen
     'login' => authenShowFormLogin(),
     'logout' => authenLogout(),
-    //
-    // 'user-detail' => userListAll(),
 };
 
 require_once './commons/disconnect-db.php';

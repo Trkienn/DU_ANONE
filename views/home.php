@@ -50,7 +50,25 @@
     </section><!-- End Hero Slider Section -->
     <!-- End Hero Slider Section -->
 
+    <div class="container">
+        <div class="row">
+            <h1>Sản Phẩm</h1>
 
+            <?php foreach ($products as $product) : ?>
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <img class="card-img-top img-responsive"  height="300px" src="<?= BASE_URL . $product['img_thumbnail'] ?>">
+                        <div class="card-body">
+                            <h4 class="card-title"><?= $product['name'] ?></h4>
+                            <p class="card-text"><?= $product['price_sale'] ?></p>
+                            <a href="<?= BASE_URL . '?act=cart-add&productID=' . $product['id'] . '&quantity=1' ?>" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+
+        </div>
+    </div>
 
     
     <!-- ======= Post Grid Section ======= -->
