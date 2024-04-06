@@ -7,7 +7,7 @@ require_once './commons/env.php';
 require_once './commons/helper.php';
 require_once './commons/connect-db.php';
 require_once './commons/model.php';
-
+$settings = settings();
 // Require file trong controllers và models
 require_file(PATH_CONTROLLER);
 require_file(PATH_MODEL);
@@ -42,6 +42,9 @@ match ($act) {
     'order-checkout'  => orderCheckout(),
     'order-purchase'  => orderPurchase(),
     'order-success'  => orderSuccess(),
+
+    // sản phẩm chi tiết
+    'product-ct' => productChitiet($_GET['id']),
 
     // Authen
     'login' => authenShowFormLogin(),

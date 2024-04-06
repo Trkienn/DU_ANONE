@@ -11,7 +11,7 @@
         và mỗi hành động là một khúc biến đổi. Chúng ta là những người xây dựng cuộc sống 
         của chính mình từ những mảnh ghép nhỏ, tạo nên một tác phẩm đầy ý nghĩa và đẹp đẽ."
         <?= $GLOBALS['settings'] ['overview'] ?? null ?></p>
-        <p><a href="about.html" class="footer-link-more">Learn More</a></p>
+        <p><a href="https://gundamchat.com/" class="footer-link-more">GUN_DAMDC</a></p>
       </div>
       <div class="col-6 col-lg-2">
         <h3 class="footer-heading">Chi Tiết</h3>
@@ -43,40 +43,40 @@
         <ul class="footer-links footer-blog-entry list-unstyled">
           <li>
             <a href="single-post.html" class="d-flex align-items-center">
-              <img src="<?= BASE_URL ?>assets/client/assets/img/1712110244-z5310779698910_ba522ac16a40a8a01ce454cda1ff54e9.jpg" alt="" class="img-fluid me-3">
+              <img src="<?= BASE_URL ?>assets/client/assets/img/vn-11134207-7r98o-lqinnu7vn1h3ef-1705295504374.jpg" alt="" class="img-fluid me-3">
               <div>
                 <div class="post-meta d-block"><span class="date">Culture</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-                <span>5 Great Startup Tips for Female Founders</span>
+                <span>Mô hình lắp ráp Gundam HG</span>
               </div>
             </a>
           </li>
 
           <li>
             <a href="single-post.html" class="d-flex align-items-center">
-              <img src="<?= BASE_URL ?>assets/client/assets/img/1712110244-z5310779698910_ba522ac16a40a8a01ce454cda1ff54e9.jpg" alt="" class="img-fluid me-3">
+              <img src="<?= BASE_URL ?>assets/client/assets/img/z5083482632956-ed94d4791e5c925050c810ab7bacfe6d.jpg" alt="" class="img-fluid me-3">
               <div>
                 <div class="post-meta d-block"><span class="date">Culture</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-                <span>What is the son of Football Coach John Gruden, Deuce Gruden doing Now?</span>
+                <span>MÔ HÌNH LẮP RÁP HG 1/144 GUNDAM CALIBARN ( THE WITCH FROM MERCURY) </span>
               </div>
             </a>
           </li>
 
           <li>
             <a href="single-post.html" class="d-flex align-items-center">
-              <img src="<?= BASE_URL ?>assets/client/assets/img/1712153580-eba52980-1934-4d61-b446-99d390c5d367.jpg" alt="" class="img-fluid me-3">
+              <img src="<?= BASE_URL ?>assets/client/assets/img/vn-11134207-7qukw-lgoyh7tmdwkyc2-1683884430091.jpg" alt="" class="img-fluid me-3">
               <div>
                 <div class="post-meta d-block"><span class="date">Culture</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-                <span>Life Insurance And Pregnancy: A Working Mom’s Guide</span>
+                <span>MÔ HÌNH GUNDAM</span>
               </div>
             </a>
           </li>
 
           <li>
             <a href="single-post.html" class="d-flex align-items-center">
-              <img src="<?= BASE_URL ?>assets/client/assets/img/1712109443-8379036100c5e7d462c750ffef587555-1679556849873.jpg" alt="" class="img-fluid me-3">
+              <img src="<?= BASE_URL ?>assets/client/assets/img/vn-11134207-7r98o-lqew8xoty66q3b-1705069859864.jpg" alt="" class="img-fluid me-3">
               <div>
                 <div class="post-meta d-block"><span class="date">Culture</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-                <span>How to Avoid Distraction and Stay Focused During Video Calls?</span>
+                <span>Mô Hình Lắp Ráp MG 1/100 G</span>
               </div>
             </a>
           </li>
@@ -94,7 +94,16 @@
     <div class="row justify-content-between">
       <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
         <div class="copyright">
-          © Copyright <strong><span>ZenBlog</span></strong>. All Rights Reserved
+          © Copyright <strong>
+            <span>SHOP_GUNDAM</span>
+          </strong>  <br>Thông tin liên hệ <br>
+          <p>Địa chỉ: Số 8 Ngõ 9/16 Trần Quốc Hoàn Cầu Giấy Hà Nội
+
+            Email: Gundamchatvn@gmail.com
+
+            Hotline: 0981.31.33.35
+
+            Hotline: 0342 95 2312</p>
         </div>
 
         <div class="credits">
@@ -102,7 +111,7 @@
           <!-- You can delete the links only if you purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/herobiz-bootstrap-business-template/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          Designed by <a href="https://gundamchat.com//">GUN_DAMDC</a>
         </div>
 
       </div>

@@ -13,6 +13,13 @@ function homeIndex()
     $products = listAll('products');
     require_once PATH_VIEW . 'layouts/master.php';
 }
+function productChitiet($id)
+{
+    $productq = showOne('products', $id);
+    $products = listAll('products');
+    require_once PATH_VIEW . 'chitietsanpham.php';
+}
+
 // luồng MVC 1: vào index 
 // -> được điều hướng  đến hàm sử lý  logic trong controller tương ứng 
 // -> hàm sẽ trả về view luôn vì không có tương tác với model

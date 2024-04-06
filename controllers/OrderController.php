@@ -20,7 +20,7 @@ function orderPurchase()
 
             foreach ($_SESSION['cart'] as $productID => $item) {
                 $orderItem = [
-                    'order_id'      => $orderID,
+                    'oder_id'      => $orderID,
                     'product_id'    => $productID,
                     'quantity'      => $item['quantity'],
                     'price'         => $item['price_sale'] ?: $item['price_regular'],
