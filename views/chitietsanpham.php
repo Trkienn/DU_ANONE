@@ -19,9 +19,10 @@
                 <h1 style="text-align: center;"><?= $productq['name'] ?></h1>
                 <div>
                     <h3><?= $productq['overview'] ?></h3>
-                    <h3><?= $productq['price_regular'] ?>   <?= $productq['price_sale'] ?></h3>
+                    <h3><?= $productq['price_regular']?></h3>
+                    <h3><?= $productq['price_sale'] ?></h3>  
                     <h3><?= $productq['content'] ?></h3>
-                    <h3><?= $productq['rate'] ?></h3>
+                    <!-- <h3><?= $productq['rate'] ?></h3> -->
                 </div>
                 <div style="border: 1px solid; width: 100%; text-align: center;">
                 <a style="text-decoration: none; font-size: 30px;" href="<?= BASE_URL . '?act=cart-add&productID=' . $productq['id'] . '&quantity=1' ?>" class="btn btn-primary">Add to cart</a>

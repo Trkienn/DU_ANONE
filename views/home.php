@@ -62,7 +62,7 @@
                         </a>
                         <div class="card-body">
                             <h4 class="card-title"><?= $product['name'] ?></h4>
-                            <p class="card-text"><?= $product['price_sale'] ?></p>
+                            <p class="card-text"><?= $product['price_sale'] ?></p> 
                             <p class="card-text"><?= $product['price_regular'] ?></p>
                             <a href="<?= BASE_URL . '?act=cart-add&productID=' . $product['id'] . '&quantity=1' ?>" class="btn btn-primary">Add to cart</a>
                         </div>
@@ -81,7 +81,7 @@
 
                 <div class="col-lg-4">
                     <div class="post-entry-1 lg">
-                        <a href="#"><img src="<?= BASE_URL . $postTopView['p_img_thumnail'] ?>" alt="" class="img-fluid"></a>
+                        <a href="<?= BASE_URL ?>?act=post-ct&id=<?= $postTopView['p_id'] ?>"><img src="<?= BASE_URL . $postTopView['p_img_thumnail'] ?>" alt="" class="img-fluid"></a>
                         <div class="post-meta"><span class="date">
                                 <?= $postTopView['c_name'] ?>
                             </span> <span class="mx-1">&bullet;</span>
@@ -89,7 +89,7 @@
                                 <?= $postTopView['p_updated_at'] ?>
                             </span>
                         </div>
-                        <h2><a href="#">
+                        <h2><a href="<?= BASE_URL ?>?act=post-ct&id=<?= $postTopView['p_id'] ?>">
                                 <?= $postTopView['p_title'] ?>
                             </a></h2>
                         <p class="mb-4 d-block">
@@ -115,7 +115,7 @@
                             <div class="col-lg-4 border-start custom-border">
                                 <?php foreach ($item as $post) : ?>
                                     <div class="post-entry-1">
-                                        <a href="single-post.html"><img src="<?= BASE_URL . $post['p_img_thumnail'] ?>" alt="" class="img-fluid"></a>
+                                        <a href="<?= BASE_URL ?>?act=post-ct&id=<?= $post['p_id'] ?>"><img src="<?= BASE_URL . $post['p_img_thumnail'] ?>" alt="" class="img-fluid"></a>
                                         <div class="post-meta"><span class="date">
                                                 <?= $post['c_name'] ?>
                                             </span> <span class="mx-1">&bullet;</span>
@@ -123,7 +123,7 @@
                                                 <?= $post['p_updated_at'] ?>
                                             </span>
                                         </div>
-                                        <h2><a href="single-post.html">
+                                        <h2><a href="<?= BASE_URL ?>?act=post-ct&id=<?= $post['p_id'] ?>">
                                                 <?= $post['p_title'] ?>
                                             </a></h2>
                                     </div>
@@ -142,7 +142,7 @@
                                 <ul class="trending-post">
                                     <?php foreach ($postTop5TrendingLatest as $key => $post) : ?>
                                         <li>
-                                            <a href="#">
+                                            <a href="<?= BASE_URL ?>?act=post-ct&id=<?= $post['p_id'] ?>">
                                                 <span class="number"><?= ++$key ?></span>
                                                 <h3><?= $post['p_title'] ?></h3>
                                                 <span class="author"><?= $post['au_name'] ?></span>

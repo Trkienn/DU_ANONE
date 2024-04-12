@@ -29,7 +29,7 @@ function productShowOne($id)
 
 function productCreate()
 {
-    $title      = 'Thêm mới product';
+    $title      = 'Thêm Sản Phẩm';
     $view       = 'products/create';
 
     $categories = listAll('categories');
