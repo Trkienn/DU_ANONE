@@ -33,6 +33,12 @@ function postchitiet($id)
     $posts = listAll('posts');
     require_once PATH_VIEW . 'post.php';
 }
+function posttintuc()
+{
+    $posts = listAll('posts');
+
+    require_once PATH_VIEW . 'posttintuc.php';
+}
 
 // luồng MVC 1: vào index 
 // -> được điều hướng  đến hàm sử lý  logic trong controller tương ứng 

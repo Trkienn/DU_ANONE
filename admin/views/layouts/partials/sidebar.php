@@ -93,6 +93,18 @@
     </li>
 
     <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+            <i class="fab fa-apple"></i>
+            <span>Quản lý đơn  hàng</span>
+        </a>
+        <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" href="<?= BASE_URL_ADMIN ?>?act=orders">Danh sách</a>
+            </div>
+        </div>
+    </li>
+
+    <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
             <i class="fab fa-apple"></i>
             <span>Quản lý author</span>

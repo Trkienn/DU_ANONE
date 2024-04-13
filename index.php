@@ -46,6 +46,7 @@ match ($act) {
     // sản phẩm chi tiết
     'product-ct' => productChitiet($_GET['id']),
     'postall' => postall(),
+    'posttintuc' => posttintuc(),
     'post-ct' => postchitiet($_GET['id']),
     // Authen
     'login' => authenShowFormLogin(),
