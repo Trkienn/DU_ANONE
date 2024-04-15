@@ -12,7 +12,7 @@
           <li><a href="http://localhost/Du_ANONE/#">Danh Sách Sản Phẩm</a></li>
           <li><a href="<?= BASE_URL ?>?act=postall">Danh Sách Bài Viết</a></li>
           <li><a href="<?= BASE_URL ?>?act=posttintuc">Tin Tức</a></li>
-          <li><a href="contact.html">Liên Hệ</a></li>
+          <li><a href="<?= BASE_URL ?>?act=postlienhe">Liên Hệ</a></li>
         </ul>
       </nav><!-- .navbar -->
 

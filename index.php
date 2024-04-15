@@ -47,6 +47,7 @@ match ($act) {
     'product-ct' => productChitiet($_GET['id']),
     'postall' => postall(),
     'posttintuc' => posttintuc(),
+    'postlienhe' => postlienhe(),
     'post-ct' => postchitiet($_GET['id']),
     // Authen
     'login' => authenShowFormLogin(),

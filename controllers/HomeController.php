@@ -39,6 +39,12 @@ function posttintuc()
 
     require_once PATH_VIEW . 'posttintuc.php';
 }
+function postlienhe()
+{
+    $posts = listAll('posts');
+
+    require_once PATH_VIEW . 'postlienhe.php';
+}
 
 // luồng MVC 1: vào index 
 // -> được điều hướng  đến hàm sử lý  logic trong controller tương ứng 
