@@ -18,7 +18,7 @@
 
       <div class="position-relative">
       
-        <a href="<?= BASE_URL ?>?act=Giulieunguoidung&id=<?= $_SESSION['user']['id'] ?>">Xin chào: <?= $_SESSION['user']['name'] ?> siuuuu</a>
+        <a href="<?= BASE_URL ?>?act=Giulieunguoidung&id=<?= $_SESSION['user']['id'] ?>">Thông Tin Người Dùng: <?= $_SESSION['user']['name'] ?> </a>
       
         <a href="#" class="mx-2 js-search-open"><span class="bi-search"></span></a>
         <i class="bi bi-list mobile-nav-toggle"></i>
