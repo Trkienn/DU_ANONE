@@ -50,7 +50,8 @@
 
 
                         <?php
-                        if (!empty($_SESSION['cart'])) :
+                        if (!empty($_SESSION['cart'])) : // dùng để xác nhận giỏ hàng có giữu liệu hay chưa 
+                            // sau đó dùng foreach để duyệt mảng
                             foreach ($_SESSION['cart'] as $item) : ?>
                                 <tr>
                                     <th>

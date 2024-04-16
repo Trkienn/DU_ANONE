@@ -30,8 +30,9 @@
 
 
                 <?php
-                if (!empty($_SESSION['cart'])) :
-                    foreach ($_SESSION['cart'] as $item) : ?>
+                if (!empty($_SESSION['cart'])) : //kiểm tra cart có giá trị chưa 
+                                                // foreach duyệt mảng
+                    foreach ($_SESSION['cart'] as $item) : ?> 
                         <tr>
                             <th>
                                 <img src="<?= BASE_URL . $item['img_thumbnail'] ?>" width="50px" alt="">
@@ -62,7 +63,7 @@
                 ?>
 
             </table>
-            
+            <a href="http://localhost/Du_ANONE/#"><button> Quay Lại</button></a>
             <a href="<?= BASE_URL . '?act=order-checkout' ?>" class="btn btn-info mt-5">Checkout</a>
         </div>
     </div>
