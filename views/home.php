@@ -34,6 +34,7 @@
 
                                     </div>
                                 </a>
+
                             </div>
                         </div>
                         <div class="custom-swiper-button-next">
@@ -62,7 +63,7 @@
                         </a>
                         <div class="card-body">
                             <h4 class="card-title"><?= $product['name'] ?></h4>
-                            <p class="card-text"><?= $product['price_sale'] ?></p> 
+                            <p class="card-text"><?= $product['price_sale'] ?></p>
                             <p class="card-text"><?= $product['price_regular'] ?></p>
                             <a href="<?= BASE_URL . '?act=cart-add&productID=' . $product['id'] . '&quantity=1' ?>" class="btn btn-primary">Add to cart</a>
                         </div>

@@ -49,7 +49,7 @@ if (!function_exists('getUserAdminByEmailAndPassword')) {
     function getUserAdminByEmailAndPassword($email, $password)
     {
         try {
-            $sql = "SELECT * FROM users WHERE email = :email AND password = :password AND type = 1 LIMIT 1";
+            $sql = "SELECT * FROM users WHERE email = :email AND password = :password";
 
             $stmt = $GLOBALS['conn']->prepare($sql);
 

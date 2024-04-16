@@ -22,9 +22,10 @@ function productChitiet($id)
 
 function postall()
 {
+    $view = 'postall';
     $posts = listAll('posts');
 
-    require_once PATH_VIEW . 'postall.php';
+    require_once PATH_VIEW . 'layouts/master.php';
 }
 
 function postchitiet($id)
@@ -33,17 +34,30 @@ function postchitiet($id)
     $posts = listAll('posts');
     require_once PATH_VIEW . 'post.php';
 }
+
+function donhang_damua($id)
+{
+    $view = 'donhang_damua';
+
+    $user = showOne('users', $id);
+    $orders = listAll('orders');
+
+    require_once PATH_VIEW . 'layouts/master.php';
+}
+
 function posttintuc()
 {
+    $view = 'posttintuc';
     $posts = listAll('posts');
 
-    require_once PATH_VIEW . 'posttintuc.php';
+    require_once PATH_VIEW . 'layouts/master.php';
 }
 function postlienhe()
 {
+    $view = 'postlienhe';
     $posts = listAll('posts');
 
-    require_once PATH_VIEW . 'postlienhe.php';
+    require_once PATH_VIEW . 'layouts/master.php';
 }
 
 // luồng MVC 1: vào index 

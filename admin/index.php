@@ -14,7 +14,6 @@ require_file(PATH_MODEL_ADMIN);
 
 // Điều hướng
 $act = $_GET['act'] ?? '/';
-
 // Kiểm tra xem user đã đăng nhập chưa
 middleware_auth_check($act);
 
@@ -24,6 +23,8 @@ match($act) {
     // Authen
     'login' => authenShowFormLogin(),
     'logout' => authenLogout(),
+    
+   
 
     // CRUD User
     'users' => userListAll(),

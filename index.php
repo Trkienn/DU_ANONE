@@ -50,8 +50,11 @@ match ($act) {
     'postlienhe' => postlienhe(),
     'post-ct' => postchitiet($_GET['id']),
     // Authen
-    'login' => authenShowFormLogin(),
-    'logout' => authenLogout(),
+    'logins' => ndauthenShowFormLogin(),
+    'logoutd' => ndauthenLogout(),
+    'themtk' => themtkShowFormLogin(),
+    'Giulieunguoidung'  => profile($_GET['id']),
+    'donhang_damua'  => donhang_damua($_GET['id']),
 };
 
 require_once './commons/disconnect-db.php';

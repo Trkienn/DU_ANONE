@@ -17,10 +17,9 @@
       </nav><!-- .navbar -->
 
       <div class="position-relative">
-        <a href="<?= $GLOBALS['settings'] ['link_facebook'] ?? null ?>" class="mx-2"><span class="bi-facebook"></span></a>
-        <a href="<?= $GLOBALS['settings'] ['link_twitter'] ?? null ?>" class="mx-2"><span class="bi-twitter"></span></a>
-        <a href="<?= $GLOBALS['settings'] ['link_instagram'] ?? null ?>" class="mx-2"><span class="bi-instagram"></span></a>
-
+      
+        <a href="<?= BASE_URL ?>?act=Giulieunguoidung&id=<?= $_SESSION['user']['id'] ?>">Xin chào: <?= $_SESSION['user']['name'] ?> siuuuu</a>
+      
         <a href="#" class="mx-2 js-search-open"><span class="bi-search"></span></a>
         <i class="bi bi-list mobile-nav-toggle"></i>
 
