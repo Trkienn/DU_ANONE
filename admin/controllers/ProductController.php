@@ -3,19 +3,19 @@
 function productListAll()
 {
     $title      = 'Danh sách sản phẩm';
-    $view       = 'products/index';
+    $view       = 'products/index'; // hiển thị giữ liệu của trang sp
     $script     = 'datatable';
     $script2    = 'products/script';
     $style      = 'datatable';
 
-    $products = listAll('products');
+    $products = listAll('products'); // hiện thị tất cả sản phẩm
 
     require_once PATH_VIEW_ADMIN . 'layouts/master.php';
 }
 
 function productShowOne($id)
 {
-    $product = showOneForProduct($id);
+    $product = showOneForProduct($id); // hiển thị sản phẩm theo id
 
     if (empty($product)) {
         e404();
@@ -32,7 +32,7 @@ function productCreate()
     $title      = 'Thêm Sản Phẩm';
     $view       = 'products/create';
 
-    $categories = listAll('categories');
+    $categories = listAll('categories'); // hiện thị danh sách quả lí đơn hàng
 
     if (!empty($_POST)) {
 
@@ -91,7 +91,7 @@ function validateProductCreate($data)
     }
 }
 
-function productUpdate($id)
+function productUpdate($id) //cập nhật sp
 {
     $product = showOne('products', $id);
 
@@ -169,7 +169,7 @@ function validateProductUpdate($id, $data)
     }
 }
 
-function productDelete($id)
+function productDelete($id) // xóa sp
 {
     $product = showOne('products', $id);
 

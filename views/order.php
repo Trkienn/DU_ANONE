@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đặt hàng</title>
+    <title>Thanh Toán </title>
 
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -83,9 +83,9 @@
 
                         <?= caculator_total_order(); ?>
                     </h3>
-                    <a href="<?= BASE_URL ?>" 
-                        onclick="return !confirm('Đừng đi :))')"
-                        class="btn btn-warning"> Quay lại trang chủ</a>
+                    <!-- <a href="http://localhost/Du_ANONE/" onclick="return !confirm('Đừng đi :))')"
+                        class="btn btn-warning"> Quay lại trang chủ</a> -->
+                    <a href="http://localhost/Du_ANONE/"class="btn btn-warning"> Quay lại trang chủ</a>
 
                     <button type="submit" class="btn btn-success">Đặt mua</button>
                 </div>
