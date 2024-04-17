@@ -83,9 +83,9 @@
 
                         <?= caculator_total_order(); ?>
                     </h3>
-                    <!-- <a href="http://localhost/Du_ANONE/" onclick="return !confirm('Đừng đi :))')"
-                        class="btn btn-warning"> Quay lại trang chủ</a> -->
-                    <a href="http://localhost/Du_ANONE/"class="btn btn-warning"> Quay lại trang chủ</a>
+                    <a href="http://localhost/Du_ANONE/" onclick="return confirm('Đừng đi :))')"
+                        class="btn btn-warning"> Quay lại trang chủ</a>
+
 
                     <button type="submit" class="btn btn-success">Đặt mua</button>
                 </div>
